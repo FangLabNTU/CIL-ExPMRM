@@ -7,7 +7,6 @@
     - [Derivatization-LC-MS strategy](#Derivatization-LC-MS)
 
 - [安装](#安装)
-    - [pip方式安装](#pip方式安装)
 - [快速入门](#快速入门)
 - [联系我们](#联系我们)
 - [官方](#官网)
