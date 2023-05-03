@@ -1,17 +1,17 @@
-[![CIL-MRM标志](http://www.exposomemrm.com/static/img/website_icon.dfecee9.png "CIL-MRM logo")
+![CIL-MRM标志](http://www.exposomemrm.com/static/img/website_icon.dfecee9.png "CIL-MRM logo")
 
 <!-- TOC -->
 
 - [CIL-MRM介绍](#CIL-MRM介绍)
     - [Pseudo-multiple reaction monitoring](#Pseudo-MRM)
     - [Derivatization-LC-MS strategy](#Derivatization-LC-MS)
-
 - [安装](#安装)
+    - [CIL-MRM基础环境设置](#CIL-MRM基础环境设置)
+    - [CIL-MRM基础环境设置](#CIL-MRM操作系统支持)
 - [快速入门](#快速入门)
-- [功能介绍](#功能介绍)
-   - [peakanalysis](#peakanalysis)
-   - [peakanalysis](#peakanalysis)
-   - [peakanalysis](#peakanalysis)
+    - [predictionRT](#predictionRT)
+    - [transitiongroupdata](#transitiongroupdata)
+    - [peakanalysis](#peakanalysis)
 - [联系我们](#联系我们)
 - [官方](#官网)
 - [许可证](#许可证)
@@ -34,7 +34,7 @@ Derivatization is also named chemical isotope labeling. In such a strategy, a pa
 
 ## 安装
 
-CIL-MRM提供跨多个后端的构建选项：
+### CIL-MRM操作系统支持
 
 |  操作系统        | 状态  |
 |  :-------------- | :--- |
@@ -42,7 +42,7 @@ CIL-MRM提供跨多个后端的构建选项：
 | ubuntu-x86  | ✔️   |
 
 
-CIL-MRM基础环境设置：
+### CIL-MRM基础环境设置
 |  安装包        | 版本  |
 |  :-------------- | :--- |
 | python    | 3.6+  |
@@ -96,9 +96,19 @@ python 语言依赖包
 ## 快速入门
 
 参考[快速入门](http://www.exposomemrm.com/about)实现。
-
-## 功能介绍
+### predictionRT
+    ```R
+    Rscript ./predictionRT/predictionRT.R output.csv OH ./output
+    ```
+### transitiongroupdata
+    ```R
+    Rscript transitiongroup.R input.csv 50 ./output
+    ```
 ### peakanalysis
+    ```R
+    Rscript peakanalysis.R  infilename1 infilename2   0.01 30 0.1 parameter 300 ./output
+    ```
+
 
 ## 官网
 参考[官网](http://www.exposomemrm.com)
@@ -106,9 +116,5 @@ python 语言依赖包
 ## 联系我们
 有关安装指南、教程和API的更多详细信息，请联系我们(http://www.exposomemrm.com/contact)。
 
-
-
 ## 许可证
-
 [Apache License 2.0](https://gitee.com/mindspore/mindspore/blob/master/LICENSE)
-](https://pypi.tuna.tsinghua.edu.cn/simple)
