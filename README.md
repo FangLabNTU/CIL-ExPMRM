@@ -1,4 +1,4 @@
-![CIL-MRM标志](http://www.exposomemrm.com/static/img/website_icon.dfecee9.png "CIL-MRM logo")
+[![CIL-MRM标志](http://www.exposomemrm.com/static/img/website_icon.dfecee9.png "CIL-MRM logo")
 
 <!-- TOC -->
 
@@ -111,3 +111,4 @@ python 语言依赖包
 ## 许可证
 
 [Apache License 2.0](https://gitee.com/mindspore/mindspore/blob/master/LICENSE)
+](https://pypi.tuna.tsinghua.edu.cn/simple)
