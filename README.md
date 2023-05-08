@@ -2,7 +2,7 @@
 
 <!-- TOC -->
 
-- [ExP-MRM introduction](#ExPMRM introduction)
+- [ExP-MRM introduction](#ExPMRM-introduction)
     - [predictionRT.R](#predictionRT.R)
     - [transitiongroupdata.R](#transitiongroupdata.R)
     - [derivatization.py](#derivatization.py)
@@ -21,7 +21,7 @@
 
 <!-- /TOC -->
 
-## ExPMRM introduction
+## ExPMRM-introduction
 
 The ExPMRM project is built using Python and R, leveraging a variety of libraries. For the backend in silico derivatization of targeted compounds, the RDKit Python library is employed. It is important to mention that the derivatization module has been developed as a standalone application within this project. The backend computations for retention time (RT) prediction and mass spectrometry (MS) data analysis rely on several R packages, including the rcdk package, the randomForest package, and the xmcs package. 
 
@@ -106,7 +106,7 @@ python language package
 
 ## quickStart
 
-[install](http://www.exposomemrm.com/about)。
+[quickStart](http://www.exposomemrm.com/about)
 ### predictionRT
     ```R
     Rscript ./predictionRT/predictionRT.R output.csv OH ./output
