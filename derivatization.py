@@ -17,6 +17,7 @@ from rdkit.Chem import AllChem
 from rdkit.Chem import Descriptors
 from rdkit.Chem import rdMolDescriptors
 from molmass import Formula
+from rdkit.Chem import MolStandardize
 
 def canonicalize_smiles(smiles):
   '''canonicalize compound smiles'''
@@ -108,7 +109,8 @@ def derivatization_operator(inputfile,outfilename):
   MPEA_mass_list = []
   for index in smilestr.index:
     x = smilestr.loc[index]
-
+    ## 这里是新增的内容
+    x = standardize_smiles(x)
     DnsCl_smi, DnsCl_mass = derivatization1(x)
     MPEA_smi, MPEA_mass = derivatization2(x)
     DnsCl_smi_list.append(DnsCl_smi)
@@ -130,9 +132,29 @@ def derivatization_operator(inputfile,outfilename):
   inputdata.to_csv(outfilename,index =False)
   #输出结果表格
   return inputdata
+
+def standardize_smiles(smiles):
+    try:
+        # Convert SMILES to RDKit molecule object
+        mol = Chem.MolFromSmiles(smiles)
+
+        # Standardize the molecule
+        lfc = MolStandardize.fragment.LargestFragmentChooser()
+        standard_mol = lfc.choose(mol)
+
+        # Remove any remaining charges
+        udc = MolStandardize.charge.Uncharger()
+        standard_mol = udc.uncharge(standard_mol)
+
+        # Convert standardized molecule back to SMILES
+        standard_smiles = Chem.MolToSmiles(standard_mol, isomericSmiles=True)
+
+        return standard_smiles
+    except Exception as e:
+        print(f"Error standardizing SMILES: {smiles}")
+        print(e)
+        return None
+
+
 if __name__ == '__main__':
   derivatization_operator("MSdatabase_query_data.csv","test.csv")
-
-
-
-
