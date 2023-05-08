@@ -11,13 +11,13 @@
 - [install](#install)
     - [ExP-MRM OP](#ExP-MRM OP)
     - [ExP-MRM ENV](#ExP-MRM ENV)
-- [快速入门](#快速入门)
+- [quickStart](#quickStart)
     - [predictionRT](#predictionRT)
     - [transitiongroupdata](#transitiongroupdata)
     - [peakanalysis](#peakanalysis)
-- [联系我们](#联系我们)
-- [官方](#官网)
-- [许可证](#许可证)
+- [Contact](#Contact)
+- [website](#website)
+- [License](#License)
 
 <!-- /TOC -->
 
@@ -86,12 +86,12 @@ python language package
 | pandas  |  1.4.3+ |
 
 
-2. [建议使用anaconda环境按照相关rdk依赖包](https://github.com/rdkit/rdkit/blob/master/Docs/Book/Install.md)
+2. [It is recommended to use the anaconda environment according to the relevant RDK dependency packages](https://github.com/rdkit/rdkit/blob/master/Docs/Book/Install.md)
 
-3. [ubuntu建议使用apt-get安装R语言依赖包](http://ftp.sjtu.edu.cn/ubuntu/pool/universe/r)
+3. [Ubuntu recommends using apt get to install the R language dependency package](http://ftp.sjtu.edu.cn/ubuntu/pool/universe/r)
 
 
-4. 执行以下命令，验证安装结果。
+4. Execute the following command to verify the installation results。
 
     ```python
     import kora as kora
@@ -104,9 +104,9 @@ python language package
     ```
 
 
-## install
+## quickStart
 
-参考[install](http://www.exposomemrm.com/about)实现。
+[install](http://www.exposomemrm.com/about)。
 ### predictionRT
     ```R
     Rscript ./predictionRT/predictionRT.R output.csv OH ./output
@@ -121,11 +121,11 @@ python language package
     ```
 
 
-## 官网
-参考[官网](http://www.exposomemrm.com)
+## website
+[website](http://www.exposomemrm.com)
 
-## 联系我们
-有关安装指南、教程和API的更多详细信息，请联系我们(http://www.exposomemrm.com/contact)。
+## Contact
+For more detailed information on installation guides, tutorials, and APIs, please contact us。(http://www.exposomemrm.com/contact)。
 
-## 许可证
+## License
 [Apache License 2.0](https://gitee.com/mindspore/mindspore/blob/master/LICENSE)
