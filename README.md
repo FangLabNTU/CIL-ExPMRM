@@ -8,15 +8,15 @@
     - [derivatization.py](#derivatization-introduction)
     - [peakanalysis.R](#peakanalysis-introduction)
     - [CIL-PMRM Exposome Database](#CIL-PMR-Exposome-Database)
-- [install](#install)
+- [Install](#Install)
     - [ExP-MRM OP](#ExP-MRM-OP)
     - [ExP-MRM ENV](#ExP-MRM-ENV)
-- [quickStart](#quickStart)
+- [QuickStart](#QuickStart)
     - [predictionRT](#predictionRT)
     - [transitiongroupdata](#transitiongroupdata)
     - [peakanalysis](#peakanalysis)
 - [Contact](#Contact)
-- [website](#website)
+- [Website](#Website)
 - [License](#License)
 
 <!-- /TOC -->
@@ -104,7 +104,7 @@ python language package
     ```
 
 
-## quickStart
+## QuickStart
 
 [quickStart](http://www.exposomemrm.com/about)
 ### predictionRT
@@ -121,7 +121,7 @@ python language package
     ```
 
 
-## website
+## Website
 [website](http://www.exposomemrm.com)
 
 ## Contact
