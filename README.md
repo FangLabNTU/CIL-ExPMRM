@@ -2,12 +2,15 @@
 
 <!-- TOC -->
 
-- [ExP-MRM介绍](#CIL-MRM介绍)
-    - [Pseudo-multiple reaction monitoring](#Pseudo-MRM)
-    - [Derivatization-LC-MS strategy](#Derivatization-LC-MS)
-- [安装](#安装)
-    - [CIL-MRM操作系统支持](#CIL-MRM操作系统支持)
-    - [CIL-MRM基础环境设置](#CIL-MRM基础环境设置)
+- [ExP-MRM introduction](#ExPMRM introduction)
+    - [predictionRT.R](#predictionRT.R)
+    - [transitiongroupdata.R](#transitiongroupdata.R)
+    - [derivatization.py](#derivatization.py)
+    - [peakanalysis.R](#peakanalysis.R)
+    - [CIL-PMRM Exposome Database](#CIL-PMRM Exposome Database)
+- [install](#install)
+    - [ExP-MRM OP](#ExP-MRM OP)
+    - [ExP-MRM ENV](#ExP-MRM ENV)
 - [快速入门](#快速入门)
     - [predictionRT](#predictionRT)
     - [transitiongroupdata](#transitiongroupdata)
@@ -40,26 +43,26 @@ MS data were uploaded after LC-MS acquisition. Compounds with the ΔRT of light-
 ### CIL-PMRM Exposome Database
 The ExPMRM database contains chemicals with great environmental concern, large production, high human exposure or toxicity. In the database, 2612 parent compounds containing OH or COOH were acquired from HExpMetDB and their > 110 k biotransformation metabolites were predicted by BioTransformer 1.04. In this study, we have developed a ExPMRM database of > 110 k compounds with OH or COOH group by CIL strategy. The database contained several items of environmental pollutants, such as name, InChIKey, RT, SMILES structure, exact precursor m/z, product ion, and CE values, some of which were obtained by experimental results and related R and Python packages.
 
-## 安装
+## install
 
-### CIL-MRM操作系统支持
+### ExP-MRM OP
 
-|  操作系统        | 状态  |
+|  OP       | status  |
 |  :-------------- | :--- |
-| windows 系列    | ✔️   |
+| windows     | ✔️   |
 | ubuntu-x86  | ✔️   |
 
 
-### CIL-MRM基础环境设置
-|  安装包        | 版本  |
+### ExP-MRM ENV
+|  language        | version  |
 |  :-------------- | :--- |
 | python    | 3.6+  |
 | R  |  4.2.0  |
 
-1. 请从官方安装下载并安装whl包。
+1. Please download and install the WHL package from the official installation.
 
-R语言包依赖
-|  安装包        | 版本  |
+R language package
+|  package        | version  |
 |  :-------------- | :--- |
 | rcdk    | 4.1.1  |
 | rcdklibs  |  4.0.0 |
@@ -76,8 +79,8 @@ R语言包依赖
 | ggrepel  |  4.2.0  |
 | ggfortify    | 4.1.3  |
 
-python 语言依赖包
-|  安装包        | 版本  |
+python language package
+|  package        | version  |
 |  :-------------- | :--- |
 | kora    | 0.9.20  |
 | pandas  |  1.4.3+ |
@@ -101,9 +104,9 @@ python 语言依赖包
     ```
 
 
-## 快速入门
+## install
 
-参考[快速入门](http://www.exposomemrm.com/about)实现。
+参考[install](http://www.exposomemrm.com/about)实现。
 ### predictionRT
     ```R
     Rscript ./predictionRT/predictionRT.R output.csv OH ./output
