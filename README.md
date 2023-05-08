@@ -9,8 +9,8 @@
     - [peakanalysis.R](#peakanalysis-introduction)
     - [CIL-PMRM Exposome Database](#CIL-PMR-Exposome-Database)
 - [install](#install)
-    - [ExP-MRM OP](#ExP-MRM OP)
-    - [ExP-MRM ENV](#ExP-MRM ENV)
+    - [ExP-MRM OP](#ExP-MRM-OP)
+    - [ExP-MRM ENV](#ExP-MRM-ENV)
 - [quickStart](#quickStart)
     - [predictionRT](#predictionRT)
     - [transitiongroupdata](#transitiongroupdata)
@@ -45,7 +45,7 @@ The ExPMRM database contains chemicals with great environmental concern, large p
 
 ## install
 
-### ExP-MRM OP
+### ExP-MRM-OP
 
 |  OP       | status  |
 |  :-------------- | :--- |
@@ -53,7 +53,7 @@ The ExPMRM database contains chemicals with great environmental concern, large p
 | ubuntu-x86  | ✔️   |
 
 
-### ExP-MRM ENV
+### ExP-MRM-ENV
 |  language        | version  |
 |  :-------------- | :--- |
 | python    | 3.6+  |
