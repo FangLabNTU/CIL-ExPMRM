@@ -107,9 +107,9 @@ python language package
     ```
 
 
-## QuickStart
+## ExPMRM website
 
-[quickStart](http://www.exposomemrm.com/about)
+[website](http://www.exposomemrm.com/about)
 ### predictionRT
     ```R
     Rscript ./predictionRT/predictionRT.R output.csv OH ./output
