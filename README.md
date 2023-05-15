@@ -98,6 +98,7 @@ python language package
     ```python
     import kora as kora
     import pandas as pd
+    import rdkit
     ```
 
     ```R
