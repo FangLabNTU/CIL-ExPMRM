@@ -113,6 +113,10 @@ python language package
     ```R
     Rscript ./predictionRT/predictionRT.R output.csv OH ./output
     ```
+
+    ```bash
+    python ./predictionRT/derivatization.py
+    ```
 ### transitiongroupdata
     ```R
     Rscript transitiongroup.R input.csv 50 ./output
