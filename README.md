@@ -84,6 +84,8 @@ python language package
 |  :-------------- | :--- |
 | kora    | 0.9.20  |
 | pandas  |  1.4.3+ |
+| rdkit  |  2022.03.3 |
+
 
 
 2. [It is recommended to use the anaconda environment according to the relevant RDK dependency packages](https://github.com/rdkit/rdkit/blob/master/Docs/Book/Install.md)
