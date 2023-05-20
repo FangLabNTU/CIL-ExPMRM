@@ -40,7 +40,7 @@ The chemical structures of MPEA-COOH and DnsCl-OH derivatized products were gene
 ### peakanalysis-introduction
 MS data were uploaded after LC-MS acquisition. Compounds with the ΔRT of light- and heavy-derivatized MRM transitions < 0.1 min and intensity ratios within 0.5 – 2.0, were extracted and considered as potential OH or COOH compounds. Then, t-test and ANOVA were used for the data statistical difference analysis of peak intensity of the potential environmental biomarkers in biological samples. Compounds with p value < 0.05 and fold change > 1.5 were defined as significantly changed compounds.
 
-### CIL-PMRM-Exposome-Database
+### CIL-ExPMRM Exposome-Database
 The ExPMRM database contains chemicals with great environmental concern, large production, high human exposure or toxicity. In the database, 2612 parent compounds containing OH or COOH were acquired from HExpMetDB and their > 110 k biotransformation metabolites were predicted by BioTransformer 1.04. In this study, we have developed a ExPMRM database of > 110 k compounds with OH or COOH group by CIL strategy. The database contained several items of environmental pollutants, such as name, InChIKey, RT, SMILES structure, exact precursor m/z, product ion, and CE values, some of which were obtained by experimental results and related R and Python packages.
 
 ## install
