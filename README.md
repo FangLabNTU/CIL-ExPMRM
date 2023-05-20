@@ -21,9 +21,9 @@
 
 <!-- /TOC -->
 
-## ExPMRM-introduction
+## CIL-ExPMRM-introduction
 
-The ExPMRM project is built using Python and R, leveraging a variety of libraries. For the backend in silico derivatization of targeted compounds, the RDKit Python library is employed. It is important to mention that the derivatization module has been developed as a standalone application within this project. The backend computations for retention time (RT) prediction and mass spectrometry (MS) data analysis rely on several R packages, including the rcdk package, the randomForest package, and the xmcs package. 
+The CIL-ExPMRM project is built using Python and R, leveraging a variety of libraries. For the backend in silico derivatization of targeted compounds, the RDKit Python library is employed. It is important to mention that the derivatization module has been developed as a standalone application within this project. The backend computations for retention time (RT) prediction and mass spectrometry (MS) data analysis rely on several R packages, including the rcdk package, the randomForest package, and the xmcs package. 
 
 
 ### predictionRT-introduction
