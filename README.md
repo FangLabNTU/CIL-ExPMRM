@@ -2,7 +2,7 @@
 
 <!-- TOC -->
 
-- [ExP-MRM introduction](#ExPMRM-introduction)
+- [CIL-ExPMRM introduction](#ExPMRM-introduction)
     - [predictionRT.R](#predictionRT-introduction)
     - [transitiongroupdata.R](#transitiongroupdata-introduction)
     - [derivatization.py](#derivatization-introduction)
