@@ -1,4 +1,4 @@
-![ExP-MRM标志](http://www.exposomemrm.com/static/img/website_icon.dfecee9.png "CIL-MRM logo")
+![ExP-MRM logo](http://www.exposomemrm.com/static/img/website_icon.dfecee9.png "CIL-MRM logo")
 
 <!-- TOC -->
 
@@ -98,17 +98,13 @@ python language package
     ```python
     import kora as kora
     import pandas as pd
+    import rdkit
     ```
 
     ```R
     packsneed <- c('xcms','magrittr','MSnbase','dplyr','tidyr','ggplot2','tidyverse','ggpubr',"ggrepel","rio", 'ggfortify')
     packsneed <- c('rcdk','rcdklibs','dplyr',"rio", 'hash')
     ```
-
-
-## QuickStart
-
-[quickStart](http://www.exposomemrm.com/about)
 ### predictionRT
     ```R
     Rscript ./predictionRT/predictionRT.R output.csv OH ./output
@@ -127,7 +123,7 @@ python language package
     ```
 
 
-## Website
+## ExPMRM Website
 [website](http://www.exposomemrm.com)
 
 ## Contact
