@@ -96,10 +96,7 @@ def derivatization2(compound_smiles):
 
 #derivatization("CCC(C)(C1=CC=C(O)C=C1)C1=CC=C(O)C=C1", "DnsCl")
 #define function for derivatization and output derivatized SMILES and mass
-#输入数据，表格，表格列参数[CARSN,name,SMILES]
 def derivatization_operator(inputfile,outfilename):
-  ###对每行的smiles 用转化函数derivatization1()
-  #保存所得的两个函数输出结果
   print(inputfile)
   inputdata = pd.read_csv(inputfile)
   smilestr = inputdata['SMILES']
@@ -151,3 +148,7 @@ def standardize_smiles(smiles):
 
 if __name__ == '__main__':
   derivatization_operator("MSdatabase_query_data.csv","test.csv")
+
+
+
+
