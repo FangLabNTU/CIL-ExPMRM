@@ -109,7 +109,6 @@ def derivatization_operator(inputfile,outfilename):
   MPEA_mass_list = []
   for index in smilestr.index:
     x = smilestr.loc[index]
-    ## 这里是新增的内容
     x = standardize_smiles(x)
     DnsCl_smi, DnsCl_mass = derivatization1(x)
     MPEA_smi, MPEA_mass = derivatization2(x)
@@ -118,11 +117,6 @@ def derivatization_operator(inputfile,outfilename):
     MPEA_smi_list.append(MPEA_smi)
     MPEA_mass_list.append(MPEA_mass)
 
-  #对每行的smiles 用转化函数derivatization2()
-  #保存所得的两个函数输出结果
-
-  ###对所的的四列结果，合并到原有的输入表格当中，
-  #并依次命名为 DnsCl_SMILES, DnsCl_mass, MPEA_SMILES, MPEA_mass
   print(len(DnsCl_smi_list))
   inputdata['DnsCl_SMILES'] = DnsCl_smi_list
   inputdata['DnsCl_mass'] = DnsCl_mass_list
@@ -130,7 +124,6 @@ def derivatization_operator(inputfile,outfilename):
   inputdata['MPEA_mass'] = MPEA_mass_list
 
   inputdata.to_csv(outfilename,index =False)
-  #输出结果表格
   return inputdata
 
 def standardize_smiles(smiles):
