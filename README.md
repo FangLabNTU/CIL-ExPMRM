@@ -1,4 +1,4 @@
-![ExP-MRM logo](http://www.exposomemrm.com/static/img/website_icon.dfecee9.png "CIL-MRM logo")
+![ExP-MRM logo](http://www.exposomemrm.com/static/img/website_icon.png "CIL-MRM logo")
 
 <!-- TOC -->
 
